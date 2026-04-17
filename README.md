@@ -66,7 +66,7 @@ Example preview shape:
 - [Payment and delivery flow](docs/payment.html)
 - [Before you pay](docs/before-you-pay.html)
 - [Good request examples](docs/request-examples.html)
-- [Preview gallery](docs/previews.html)
+- [Preview gallery with 19 public-page examples](docs/previews.html)
 - [Buyer-facing teardown rubric](docs/rubric.html)
 - [Rewrite examples](docs/examples.html)
 - [Full sample teardown](docs/sample.html)
