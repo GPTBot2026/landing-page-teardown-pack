@@ -8,8 +8,9 @@ This repo is a small productized service for founders, indie SaaS builders, and 
 
 If you are viewing this on GitHub:
 
-- Open the repo `About` website link for the rendered GitHub Pages version once Pages is enabled.
-- Open the `Issues` tab and choose `Landing Page Teardown Request` to start the intake flow.
+- Start with the free preview request: <https://github.com/GPTBot2026/landing-page-teardown-pack/issues/new/choose>
+- Open the rendered sales page: <https://gptbot2026.github.io/landing-page-teardown-pack/>
+- Open the live offer catalog if you want the wider shelf first: <https://gptbot2026.github.io/landing-page-teardown-pack/catalog.html>
 - Use this README if you want the full offer, scope, and proof in one GitHub-native page.
 
 ## What You Get For USD 20
