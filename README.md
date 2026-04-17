@@ -60,6 +60,7 @@ Example preview shape:
 ## Proof And Buyer Pages
 
 - [Rendered offer page](docs/index.html)
+- [Live offer catalog](docs/catalog.html)
 - [How the process works](docs/process.html)
 - [Payment and delivery flow](docs/payment.html)
 - [Before you pay](docs/before-you-pay.html)
