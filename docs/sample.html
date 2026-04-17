@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sample Landing Page Teardown</title>
+    <meta
+      name="description"
+      content="Buyer-facing example of the USD 20 AI-assisted landing page teardown format, including ranked fixes, headline options, and CTA rewrite."
+    >
+    <meta name="theme-color" content="#f6f0e6">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Sample Landing Page Teardown">
+    <meta
+      property="og:description"
+      content="See the format of the landing page teardown pack before opening a request."
+    >
+    <meta property="og:image" content="./og-preview.svg">
+    <meta
+      property="og:image:alt"
+      content="Landing Page Teardown Pack preview card showing the USD 20 offer, free preview path, and included teardown outputs."
+    >
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sample Landing Page Teardown">
+    <meta
+      name="twitter:description"
+      content="Buyer-facing example of the teardown format used in the USD 20 landing page pack."
+    >
+    <meta name="twitter:image" content="./og-preview.svg">
+    <style>
+      :root {
+        --bg: #f6f0e6;
+        --panel: rgba(255, 251, 244, 0.9);
+        --ink: #1d1a16;
+        --muted: #5f5448;
+        --accent: #9f3f24;
+        --line: rgba(29, 26, 22, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(212, 143, 53, 0.2), transparent 34%),
+          linear-gradient(180deg, #fbf7f0 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 40px 0 56px;
+      }
+
+      .panel {
+        padding: 28px 24px;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 18px 48px rgba(67, 50, 29, 0.08);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(159, 63, 36, 0.1);
+        color: var(--accent);
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0 0 12px;
+        line-height: 1.05;
+      }
+
+      h1 {
+        font-size: clamp(2.2rem, 5vw, 4rem);
+      }
+
+      h2 {
+        margin-top: 28px;
+        font-size: clamp(1.4rem, 3vw, 2rem);
+      }
+
+      h3 {
+        margin-top: 18px;
+        font-size: 1.15rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1.02rem;
+        line-height: 1.65;
+      }
+
+      ul,
+      ol {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .meta,
+      .rewrite {
+        margin-top: 20px;
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(29, 26, 22, 0.05);
+      }
+
+      a {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 28px;
+      }
+
+      .nav a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <span class="eyebrow">Buyer-facing example</span>
+        <h1>Sample Landing Page Teardown</h1>
+        <p>
+          This example shows the format of the USD 20 AI-assisted teardown. It uses a
+          fictional product so no client work is misrepresented.
+        </p>
+
+        <div class="meta">
+          <h2>Example Page</h2>
+          <ul>
+            <li>Product: SignalDesk</li>
+            <li>Type: small SaaS tool for support-team handoff notes</li>
+            <li>Goal: start a free trial</li>
+            <li>Audience: support leads at small remote software teams</li>
+          </ul>
+        </div>
+
+        <h2>Fast Diagnosis</h2>
+        <p>
+          The page explains features before it explains the pain. A visitor has to read too long
+          before understanding the cost of the current problem or why this tool is different from
+          a shared doc. The CTA is visible, but the page does not build enough urgency or trust
+          before asking for the click.
+        </p>
+
+        <h2>Priority Fixes</h2>
+        <ol>
+          <li>Rewrite the hero so it states the problem, user, and payoff in one pass.</li>
+          <li>Move social proof or trust evidence above the fold instead of waiting until the lower half of the page.</li>
+          <li>Replace generic feature blocks with outcome-led sections tied to handoff speed, fewer dropped issues, and cleaner accountability.</li>
+          <li>Tighten the CTA copy so it promises a clear next step instead of a vague trial.</li>
+          <li>Add one short objection-handling section for teams worried about changing workflow.</li>
+        </ol>
+
+        <h2>What Is Weak Right Now</h2>
+
+        <h3>Headline</h3>
+        <p>
+          Current style: product-first and abstract. It sounds like internal tool jargon instead
+          of a sharp buyer promise.
+        </p>
+        <ul>
+          <li>A cold visitor cannot tell who the product is for.</li>
+          <li>The page does not establish the pain quickly enough.</li>
+          <li>The differentiator is buried below the fold.</li>
+        </ul>
+
+        <h3>Offer Clarity</h3>
+        <p>
+          The page says the tool centralizes handoff notes, but it does not explain why a support
+          lead should care this week. The value needs to be framed around fewer missed details,
+          faster shift changes, and less manager cleanup.
+        </p>
+
+        <h3>Trust</h3>
+        <p>
+          Trust arrives too late. If there are no logos, testimonials, or usage numbers ready yet,
+          use a concrete claim such as "built for teams handling shared inbox volume across time zones"
+          plus a short founder note about the exact problem the tool was built to reduce.
+        </p>
+
+        <h3>CTA</h3>
+        <p>
+          The CTA "Start Free" is serviceable but weak in context. It does not connect to the
+          visitor's job to be done.
+        </p>
+
+        <h2>Three Replacement Headlines</h2>
+        <ol>
+          <li>Stop losing support context between shifts.</li>
+          <li>Handoffs your support team can actually trust.</li>
+          <li>Keep every customer thread moving when the next rep takes over.</li>
+        </ol>
+
+        <div class="rewrite">
+          <h2>CTA Section Rewrite</h2>
+          <p><strong>Suggested copy</strong></p>
+          <p>
+            Keep your next support handoff from starting cold.
+          </p>
+          <p>
+            SignalDesk gives your team one place to leave the context, risk flags, and next
+            actions that stop issues from slipping between reps.
+          </p>
+          <p>
+            Start your free trial and test it on your next shift change.
+          </p>
+        </div>
+
+        <h2>First Change To Ship</h2>
+        <p>
+          Ship the hero rewrite first. If the top of the page becomes clearer about audience,
+          problem, and payoff, every lower section performs better because visitors can finally
+          understand what they are evaluating.
+        </p>
+
+        <div class="nav" aria-label="Related pages">
+          <a href="./index.html">Back to the offer page</a>
+          <a href="./process.html">See how the process works</a>
+          <a href="./request-examples.html">See good request examples</a>
+          <a href="./faq.html">Read the buyer FAQ</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page Teardown Rubric</title>
+    <meta
+      name="description"
+      content="The exact buyer-facing rubric used in the USD 20 AI-assisted landing page teardown pack."
+    >
+    <meta name="theme-color" content="#f4efe5">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Landing Page Teardown Rubric">
+    <meta
+      property="og:description"
+      content="See the exact dimensions used to judge clarity, trust, CTA strength, and conversion friction."
+    >
+    <meta property="og:image" content="./og-preview.svg">
+    <meta
+      property="og:image:alt"
+      content="Landing Page Teardown Pack preview card showing the USD 20 offer, free preview path, and included teardown outputs."
+    >
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Landing Page Teardown Rubric">
+    <meta
+      name="twitter:description"
+      content="The practical scoring framework used in the landing page teardown pack."
+    >
+    <meta name="twitter:image" content="./og-preview.svg">
+    <style>
+      :root {
+        --bg: #f4efe5;
+        --panel: rgba(255, 251, 244, 0.9);
+        --ink: #1d1a16;
+        --muted: #5f5448;
+        --accent: #9f3f24;
+        --accent-2: #d48f35;
+        --line: rgba(29, 26, 22, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(212, 143, 53, 0.24), transparent 32%),
+          radial-gradient(circle at bottom right, rgba(159, 63, 36, 0.16), transparent 28%),
+          linear-gradient(180deg, #faf6ee 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 40px 0 56px;
+      }
+
+      .panel,
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 18px 48px rgba(67, 50, 29, 0.08);
+      }
+
+      .panel {
+        padding: 28px 24px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(159, 63, 36, 0.1);
+        color: var(--accent);
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0 0 12px;
+        line-height: 1.04;
+      }
+
+      h1 {
+        font-size: clamp(2.2rem, 5vw, 4rem);
+      }
+
+      h2 {
+        font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+      }
+
+      h3 {
+        font-size: 1rem;
+        color: var(--accent);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1.02rem;
+        line-height: 1.65;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .card {
+        padding: 22px 20px;
+      }
+
+      .score {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: rgba(212, 143, 53, 0.14);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      .why,
+      .bands {
+        margin-top: 16px;
+        padding: 14px 16px;
+        border-radius: 18px;
+        background: rgba(29, 26, 22, 0.05);
+      }
+
+      .bands {
+        border-left: 4px solid var(--accent-2);
+        background: rgba(212, 143, 53, 0.1);
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 24px;
+      }
+
+      .nav a {
+        color: var(--accent);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      @media (max-width: 760px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <span class="eyebrow">Buyer-facing framework</span>
+        <h1>Landing Page Teardown Rubric</h1>
+        <p>
+          The pack does not rely on vague taste. Each teardown uses the same seven-part rubric so
+          the feedback stays consistent, comparable, and narrow enough to ship from.
+        </p>
+        <p>
+          Scores are directional, not scientific. They exist to show where the page is most likely
+          losing clarity, trust, or action momentum right now.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <span class="score">1. Buyer Clarity</span>
+            <h2>Can a cold visitor tell who the page is for within a few seconds?</h2>
+            <div class="why">
+              <h3>What gets checked</h3>
+              <ul>
+                <li>Does the hero identify the buyer, not just the category?</li>
+                <li>Is the job to be done obvious without scrolling?</li>
+                <li>Is the language specific enough to exclude the wrong audience?</li>
+              </ul>
+            </div>
+            <div class="bands">
+              <h3>Low score usually means</h3>
+              <p>The page sounds broad, abstract, or product-first before buyer-first.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="score">2. Problem And Payoff</span>
+            <h2>Does the page make the pain and the outcome easy to understand?</h2>
+            <div class="why">
+              <h3>What gets checked</h3>
+              <ul>
+                <li>Does the copy name the problem in buyer language?</li>
+                <li>Is the promised result concrete instead of generic?</li>
+                <li>Does the payoff arrive before feature detail overwhelms it?</li>
+              </ul>
+            </div>
+            <div class="bands">
+              <h3>Low score usually means</h3>
+              <p>The reader can describe features sooner than they can describe the win.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="score">3. Offer Structure</span>
+            <h2>Is the page ordered so the main promise lands before supporting detail?</h2>
+            <div class="why">
+              <h3>What gets checked</h3>
+              <ul>
+                <li>Does the first screen carry the core message cleanly?</li>
+                <li>Are sections sequenced in a persuasive order?</li>
+                <li>Does the page avoid burying the sale under setup copy?</li>
+              </ul>
+            </div>
+            <div class="bands">
+              <h3>Low score usually means</h3>
+              <p>The page makes the visitor work too hard before the main pitch is settled.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="score">4. Trust Signals</span>
+            <h2>Does the page earn belief before it asks for commitment?</h2>
+            <div class="why">
+              <h3>What gets checked</h3>
+              <ul>
+                <li>Is there proof, specificity, or a believable reason to trust?</li>
+                <li>Do objections get addressed before the CTA?</li>
+                <li>Does the page feel grounded in a real use case?</li>
+              </ul>
+            </div>
+            <div class="bands">
+              <h3>Low score usually means</h3>
+              <p>The CTA appears before enough evidence or context justifies it.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="score">5. CTA Strength</span>
+            <h2>Is the next action obvious, credible, and proportional to the ask?</h2>
+            <div class="why">
+              <h3>What gets checked</h3>
+              <ul>
+                <li>Does the CTA state a clear next step?</li>
+                <li>Is the ask too heavy for the amount of proof shown?</li>
+                <li>Do surrounding sections support the action instead of distracting from it?</li>
+              </ul>
+            </div>
+            <div class="bands">
+              <h3>Low score usually means</h3>
+              <p>The button exists, but the visitor still does not feel ready to click it.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="score">6. Copy Specificity</span>
+            <h2>Does the wording sound precise enough to matter?</h2>
+            <div class="why">
+              <h3>What gets checked</h3>
+              <ul>
+                <li>Are claims concrete instead of category filler?</li>
+                <li>Does the language reduce ambiguity rather than add jargon?</li>
+                <li>Would a buyer repeat the promise accurately after one read?</li>
+              </ul>
+            </div>
+            <div class="bands">
+              <h3>Low score usually means</h3>
+              <p>The copy uses polished language, but the meaning is still slippery.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="score">7. Friction And Leakage</span>
+            <h2>What is likely slowing a motivated visitor down?</h2>
+            <div class="why">
+              <h3>What gets checked</h3>
+              <ul>
+                <li>Are there unnecessary choices, delays, or jumps in logic?</li>
+                <li>Do weak transitions create drop-off points?</li>
+                <li>Is the fastest path to belief and action visible?</li>
+              </ul>
+            </div>
+            <div class="bands">
+              <h3>Low score usually means</h3>
+              <p>The page has avoidable drag even if the product itself may be strong.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="nav">
+          <a href="./index.html">Back to offer page</a>
+          <a href="./sample.html">See sample teardown</a>
+          <a href="./previews.html">Browse preview gallery</a>
+          <a href="./examples.html">See rewrite examples</a>
+          <a href="./faq.html">Read buyer FAQ</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

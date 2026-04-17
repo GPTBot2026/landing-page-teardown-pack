@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page Teardown Pack</title>
+    <meta
+      name="description"
+      content="USD 20 AI-assisted landing page teardown for founders and small software products. Get a short free preview, then a ranked teardown, headline options, and CTA rewrite within 24 hours."
+    >
+    <meta name="theme-color" content="#f4efe5">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Landing Page Teardown Pack">
+    <meta
+      property="og:description"
+      content="USD 20 AI-assisted landing page teardown with a short free preview, ranked fixes, headline options, and a CTA rewrite."
+    >
+    <meta property="og:image" content="./og-preview.svg">
+    <meta
+      property="og:image:alt"
+      content="Landing Page Teardown Pack preview card showing the USD 20 offer, free preview path, and included teardown outputs."
+    >
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Landing Page Teardown Pack">
+    <meta
+      name="twitter:description"
+      content="Fast, text-only landing page teardown for founders who need clearer copy and stronger conversion structure."
+    >
+    <meta name="twitter:image" content="./og-preview.svg">
+    <style>
+      :root {
+        --bg: #f4efe5;
+        --panel: rgba(255, 251, 244, 0.86);
+        --ink: #1d1a16;
+        --muted: #5f5448;
+        --accent: #9f3f24;
+        --accent-2: #d48f35;
+        --line: rgba(29, 26, 22, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(212, 143, 53, 0.24), transparent 34%),
+          radial-gradient(circle at bottom right, rgba(159, 63, 36, 0.18), transparent 30%),
+          linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 64px;
+      }
+
+      .hero,
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(67, 50, 29, 0.08);
+        backdrop-filter: blur(8px);
+      }
+
+      .hero {
+        padding: 40px 28px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 14px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(159, 63, 36, 0.1);
+        color: var(--accent);
+        font-size: 0.85rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+        line-height: 0.96;
+        font-weight: 700;
+      }
+
+      h1 {
+        max-width: 11ch;
+        font-size: clamp(2.6rem, 7vw, 5.8rem);
+      }
+
+      h2 {
+        font-size: clamp(1.6rem, 3vw, 2.4rem);
+      }
+
+      p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.6;
+      }
+
+      .hero-grid,
+      .cards {
+        display: grid;
+        gap: 20px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1.45fr 0.95fr;
+        align-items: end;
+      }
+
+      .price {
+        padding: 22px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(159, 63, 36, 0.1), rgba(212, 143, 53, 0.13));
+      }
+
+      .microproof {
+        display: grid;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .microproof span {
+        display: block;
+        padding: 10px 12px;
+        border-radius: 14px;
+        background: rgba(255, 251, 244, 0.72);
+        color: var(--ink);
+        font-size: 0.98rem;
+        line-height: 1.45;
+      }
+
+      .price strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 3rem;
+        line-height: 1;
+        color: var(--accent);
+      }
+
+      .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 20px;
+      }
+
+      .card {
+        padding: 24px;
+      }
+
+      ul,
+      ol {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .cta {
+        margin-top: 22px;
+        padding: 16px 18px;
+        border-left: 4px solid var(--accent-2);
+        background: rgba(212, 143, 53, 0.1);
+        color: var(--ink);
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 18px;
+      }
+
+      .step {
+        padding: 16px 14px;
+        border-radius: 18px;
+        background: rgba(29, 26, 22, 0.05);
+      }
+
+      .step strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--accent);
+        font-size: 0.88rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .step p {
+        margin: 0;
+        font-size: 0.98rem;
+      }
+
+      .proof {
+        margin-top: 18px;
+        padding: 16px 18px;
+        border-radius: 16px;
+        background: rgba(29, 26, 22, 0.05);
+      }
+
+      .proof a {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .route {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px 0 0;
+      }
+
+      .route a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 14px;
+        border: 1px solid rgba(159, 63, 36, 0.2);
+        border-radius: 999px;
+        background: rgba(255, 251, 244, 0.7);
+        color: var(--accent);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .route a.primary-route {
+        background: linear-gradient(135deg, var(--accent), #b85a33);
+        color: #fffaf3;
+        border-color: transparent;
+      }
+
+      .route a.is-disabled {
+        opacity: 0.55;
+        pointer-events: none;
+      }
+
+      .fine {
+        margin-top: 26px;
+        font-size: 0.95rem;
+      }
+
+      code {
+        padding: 0.12rem 0.35rem;
+        border-radius: 6px;
+        background: rgba(29, 26, 22, 0.07);
+        color: var(--ink);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.94em;
+      }
+
+      @media (max-width: 760px) {
+        .hero-grid,
+        .cards,
+        .steps {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding: 28px 20px;
+        }
+
+        .card {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <span class="eyebrow">AI-assisted conversion review</span>
+        <div class="hero-grid">
+          <div>
+            <h1>Your landing page is probably burying the sale.</h1>
+            <p>
+              This pack gives you a fast, plain-English teardown of one live landing page:
+              what is unclear, what breaks trust, what weakens the CTA, and what to rewrite first.
+            </p>
+            <p>
+              The path is intentionally simple: request a teardown in public, get a short free
+              preview first, then pay only if the preview looks useful enough to want the full pack.
+            </p>
+            <p class="cta">
+              To request one, use the request button below or open a GitHub issue titled <code>Teardown Request</code> and include:
+              your page URL, what you sell, the main action you want visitors to take, and the audience you want to convert.
+            </p>
+            <p class="fine">
+              Public-by-design intake: do not submit private URLs, internal metrics, or confidential launch details through the GitHub issue flow.
+            </p>
+            <div class="steps" aria-label="Offer flow">
+              <div class="step">
+                <strong>1. Request</strong>
+                <p>Open one public GitHub issue with your page URL and context.</p>
+              </div>
+              <div class="step">
+                <strong>2. Preview</strong>
+                <p>Receive a short public preview before any payment decision.</p>
+              </div>
+              <div class="step">
+                <strong>3. Full pack</strong>
+                <p>Pay USD 20 only if you want the full teardown within 24 hours.</p>
+              </div>
+            </div>
+            <p class="fine">
+              Best for solo founders, indie SaaS projects, and small software products that already have a page but need sharper copy and tighter structure.
+            </p>
+            <p class="proof">
+              Want to see the format first? Read the
+              <a href="./sample.html">sample teardown</a>.
+            </p>
+            <p class="proof">
+              Need the practical details first? Read the
+              <a href="./faq.html">buyer FAQ</a>.
+            </p>
+            <p class="proof">
+              Want the exact request-to-delivery path first? Read
+              <a href="./process.html">how the teardown works</a>.
+            </p>
+            <p class="proof">
+              Want to know exactly what happens after a useful preview? Read the
+              <a href="./payment.html">payment and delivery page</a>.
+            </p>
+            <p class="proof">
+              Still deciding whether the paid pack is worth it? Read
+              <a href="./before-you-pay.html">before you pay</a>.
+            </p>
+            <p class="proof">
+              Want help writing a useful issue? Use the
+              <a href="./request-examples.html">good request examples</a>.
+            </p>
+            <p class="proof">
+              Want to see how the free first reply looks across different page types? Browse the
+              <a href="./previews.html">preview gallery</a>.
+            </p>
+            <p class="proof">
+              Want to see the exact evaluation framework first? Review the
+              <a href="./rubric.html">teardown rubric</a>.
+            </p>
+            <p class="proof">
+              Want concrete rewrite examples before you buy? Browse the
+              <a href="./examples.html">hero rewrite examples</a>.
+            </p>
+            <div class="route" aria-label="Buyer path">
+              <a
+                class="primary-route is-disabled"
+                data-issue-link
+                href="#"
+                aria-disabled="true"
+              >Open request issue</a>
+              <a href="./sample.html">View sample teardown</a>
+              <a href="./process.html">Review the process</a>
+              <a href="./payment.html">See payment and delivery</a>
+              <a href="./before-you-pay.html">Read before you pay</a>
+              <a href="./request-examples.html">See request examples</a>
+              <a href="./previews.html">Browse preview gallery</a>
+              <a href="./rubric.html">Review the rubric</a>
+              <a href="./examples.html">See rewrite examples</a>
+              <a href="./faq.html">Check scope and FAQ</a>
+            </div>
+          </div>
+          <aside class="price">
+            <strong>$20</strong>
+            <p>Paid upfront by PayPal only after the free preview looks useful.</p>
+            <p>Delivery target: within 24 hours after confirmed payment and intake.</p>
+            <div class="microproof" aria-label="Offer facts">
+              <span>One public landing page only. No calls, no account access, no implementation work.</span>
+              <span>Best fit: SaaS, waitlist, product overview, and simple service pages with one main CTA.</span>
+              <span>Delivered honestly as AI-assisted, text-only feedback with ranked fixes and rewrites.</span>
+              <span>No payment needed for the first scope check and short preview.</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="cards">
+        <article class="card">
+          <h2>What you get</h2>
+          <ul>
+            <li>One teardown with conversion problems ranked in priority order.</li>
+            <li>Three headline replacements.</li>
+            <li>One rewritten CTA section.</li>
+            <li>A quick-win fix list so the first change is obvious.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>How it works</h2>
+          <ol>
+            <li>Open a GitHub issue with your URL and context.</li>
+            <li>Receive a short preview so you can judge fit.</li>
+            <li>Pay by PayPal if you want the full teardown.</li>
+            <li>Get the final Markdown delivery within 24 hours.</li>
+          </ol>
+          <p class="fine">
+            Want the payment-stage handoff spelled out? Read the
+            <a href="./payment.html">payment and delivery page</a>.
+          </p>
+          <p class="fine">
+            Want the main purchase hesitations answered first? Read
+            <a href="./before-you-pay.html">before you pay</a>.
+          </p>
+          <p class="fine">
+            Need help with the issue itself? Compare your draft against the
+            <a href="./request-examples.html">request examples page</a>.
+          </p>
+          <p class="fine">
+            Want the scoring framework first? Review the
+            <a href="./rubric.html">buyer-facing rubric</a>.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Ground rules</h2>
+          <ul>
+            <li>The work is AI-assisted and text-only.</li>
+            <li>No access to your site, analytics, or accounts is required.</li>
+            <li>No promises about conversion lifts or sales outcomes.</li>
+            <li>Best fit is clear copy and offer-structure improvement.</li>
+            <li>GitHub issue intake is public, so do not post confidential details.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script>
+      (function () {
+        var issueLink = document.querySelector("[data-issue-link]");
+
+        if (!issueLink) {
+          return;
+        }
+
+        var hostname = window.location.hostname;
+        var pathParts = window.location.pathname.split("/").filter(Boolean);
+
+        if (!hostname.endsWith(".github.io") || pathParts.length === 0) {
+          issueLink.textContent = "Open the repo issue chooser after publication";
+          return;
+        }
+
+        var owner = hostname.slice(0, -".github.io".length);
+        var repo = pathParts[0];
+        var issueUrl = "https://github.com/" + owner + "/" + repo + "/issues/new/choose";
+
+        issueLink.href = issueUrl;
+        issueLink.removeAttribute("aria-disabled");
+        issueLink.classList.remove("is-disabled");
+      })();
+    </script>
+  </body>
+</html>

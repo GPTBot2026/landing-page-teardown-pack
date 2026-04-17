@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How The Teardown Works</title>
+    <meta
+      name="description"
+      content="Buyer-facing request, payment, delivery, and privacy flow for the USD 20 AI-assisted landing page teardown pack."
+    >
+    <meta name="theme-color" content="#f4efe5">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How The Teardown Works">
+    <meta
+      property="og:description"
+      content="See the exact request-to-preview-to-payment-to-delivery flow before opening a landing page teardown request."
+    >
+    <meta property="og:image" content="./og-preview.svg">
+    <meta
+      property="og:image:alt"
+      content="Landing Page Teardown Pack preview card showing the USD 20 offer, free preview path, and included teardown outputs."
+    >
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How The Teardown Works">
+    <meta
+      name="twitter:description"
+      content="Buyer-facing process page for the USD 20 AI-assisted landing page teardown offer."
+    >
+    <meta name="twitter:image" content="./og-preview.svg">
+    <style>
+      :root {
+        --bg: #f4efe5;
+        --panel: rgba(255, 251, 244, 0.9);
+        --ink: #1d1a16;
+        --muted: #5f5448;
+        --accent: #9f3f24;
+        --accent-2: #d48f35;
+        --line: rgba(29, 26, 22, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(212, 143, 53, 0.2), transparent 34%),
+          radial-gradient(circle at bottom right, rgba(159, 63, 36, 0.16), transparent 30%),
+          linear-gradient(180deg, #faf6ee 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(900px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 40px 0 56px;
+      }
+
+      .panel,
+      .step {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 18px 48px rgba(67, 50, 29, 0.08);
+      }
+
+      .panel {
+        padding: 28px 24px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(159, 63, 36, 0.1);
+        color: var(--accent);
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+        line-height: 1.04;
+      }
+
+      h1 {
+        font-size: clamp(2.2rem, 5vw, 4rem);
+      }
+
+      h2 {
+        font-size: clamp(1.25rem, 2.8vw, 1.75rem);
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1.02rem;
+        line-height: 1.65;
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .step {
+        padding: 22px 20px;
+      }
+
+      .num {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 12px;
+        border-radius: 999px;
+        background: rgba(212, 143, 53, 0.16);
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .note {
+        margin-top: 20px;
+        padding: 16px 18px;
+        border-left: 4px solid var(--accent-2);
+        background: rgba(212, 143, 53, 0.1);
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 24px;
+      }
+
+      .nav a {
+        color: var(--accent);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      @media (max-width: 760px) {
+        .steps {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <span class="eyebrow">Buyer process</span>
+        <h1>How The Teardown Works</h1>
+        <p>
+          This page shows the exact path from request to delivery for the USD 20 AI-assisted
+          landing page teardown pack so you can judge fit before opening an issue.
+        </p>
+        <p>
+          The offer is intentionally narrow: one public page, one short preview, one upfront
+          payment only if the preview looks useful, and one text-only delivery.
+        </p>
+
+        <div class="steps">
+          <article class="step">
+            <span class="num">1</span>
+            <h2>Open a public request</h2>
+            <p>
+              Use the GitHub issue template and send one public landing page URL plus brief
+              context on what the page sells, who it targets, and what action it should drive.
+            </p>
+            <ul>
+              <li>The page must be public and centered on one main conversion goal.</li>
+              <li>Do not post confidential information, private metrics, or private URLs.</li>
+              <li>Best fit is copy, offer, trust, or CTA friction on an already-live page.</li>
+            </ul>
+          </article>
+
+          <article class="step">
+            <span class="num">2</span>
+            <h2>Receive a free preview</h2>
+            <p>
+              A short public preview reply highlights the first few clarity or conversion problems
+              so you can see whether the full teardown is likely to be useful.
+            </p>
+            <ul>
+              <li>The preview is short by design and does not replace the full teardown.</li>
+              <li>If the request is out of scope, that is stated directly before payment.</li>
+              <li>No payment is requested before that first fit check happens.</li>
+            </ul>
+          </article>
+
+          <article class="step">
+            <span class="num">3</span>
+            <h2>Pay only if the preview looks useful</h2>
+            <p>
+              If the preview is useful, the next step is USD 20 paid upfront by PayPal before the
+              full teardown is delivered.
+            </p>
+            <ul>
+              <li>The payment-stage handoff is summarized on the separate payment and delivery page.</li>
+              <li>No site access, analytics access, or account access is required.</li>
+              <li>The work is delivered honestly as AI-assisted.</li>
+              <li>The USD 20 price covers one page only, not a broader consulting engagement.</li>
+            </ul>
+          </article>
+
+          <article class="step">
+            <span class="num">4</span>
+            <h2>Receive the full teardown</h2>
+            <p>
+              Delivery target is within 24 hours after payment confirmation and complete intake.
+              The final pack is text-only and focused on copy and structure.
+            </p>
+            <ul>
+              <li>Ranked conversion problems</li>
+              <li>Three replacement headlines</li>
+              <li>One rewritten CTA section</li>
+              <li>Quick-win fix list with the first change to ship</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="note">
+          This offer is meant for fast, practical feedback on a single landing page. It does not
+          include implementation, analytics, private consulting, or guaranteed performance claims.
+        </p>
+        <p class="note">
+          If privacy is mandatory or the page is not public, do not use the GitHub issue path for
+          this offer in its current form.
+        </p>
+
+        <div class="nav" aria-label="Related pages">
+          <a href="./index.html">Back to the offer page</a>
+          <a href="./payment.html">See payment and delivery</a>
+          <a href="./before-you-pay.html">Read before you pay</a>
+          <a href="./request-examples.html">See good request examples</a>
+          <a href="./previews.html">See preview examples</a>
+          <a href="./sample.html">View the full sample teardown</a>
+          <a href="./faq.html">Read the buyer FAQ</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
